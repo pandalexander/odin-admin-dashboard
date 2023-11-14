@@ -43,3 +43,7 @@ body {
   grid-row: 2 / -1;
   background-color: yellow;
 }
+
+div {
+  color: white;
+}
