@@ -19,7 +19,6 @@ body {
 }
 
 .container {
-  border: solid 2px orange;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -29,19 +28,63 @@ body {
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  background-color: green;
+  background-color: #059669;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.header__top-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.header__top-container__search-icon {
+  height: 35px;
+  justify-self: center;
+}
+
+.header__top-container__search-bar {
+  all: unset;
+  height: 30px;
+  background-color: #34d399;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.header__top-container__bell-icon {
+  height: 35px;
+  justify-self: end;
+}
+
+.header__top-container__profile {
+  height: 55px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.header__top-container__name {
+  justify-self: start;
+}
+
+.header__bottom-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-  background-color: blue;
+  background-color: #022c22;
 }
 
 .main-content {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
-  background-color: yellow;
+  background-color: #065f46;
 }
 
 div {
