@@ -121,6 +121,13 @@ button {
   grid-row: 1 / -1;
   background-color: #022c22;
   padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 3fr repeat(10, 1fr);
+}
+
+.sidebar > * {
+  color: #ecfdf5;
 }
 
 .main-content {
