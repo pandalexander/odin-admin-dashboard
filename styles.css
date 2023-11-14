@@ -120,14 +120,32 @@ button {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   background-color: #022c22;
-  padding: 25px;
+  padding: 0px 25px 25px 25px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 3fr repeat(10, 1fr);
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr repeat(10, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .sidebar > * {
   color: #ecfdf5;
+}
+
+.sidebar > img {
+  height: 35px;
+}
+
+.sidebar > p {
+  justify-self: start;
+}
+
+#sidebar__dashboard-text {
+  font-size: 2em;
+}
+
+#sidebar__dashboard-icon {
+  height: 65px;
 }
 
 .main-content {
