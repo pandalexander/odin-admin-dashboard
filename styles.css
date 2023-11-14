@@ -114,6 +114,7 @@ h2 {
 .header__bottom-container__welcome-container > h2 {
   grid-row: 2 / -1;
   color: #022c22;
+  font-size: 2em;
 }
 
 button {
@@ -169,6 +170,10 @@ button {
   grid-template-rows: 1fr 1fr;
 }
 
+.main-content > * {
+  color: #022c22;
+}
+
 .main-content__projects-container {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
@@ -200,6 +205,7 @@ button {
 
 .card > p {
   padding-top: 5px;
+  font-size: 1em;
 }
 
 .card-icon-container {
@@ -214,6 +220,28 @@ button {
   margin: 0px 15px 0px 15px;
 }
 
-div {
-  color: #022c22;
+.announcement-card {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  padding: 35px;
+}
+
+.announcement > h3,
+p {
+  font-size: 1em;
+}
+
+.announcement > p {
+  margin-top: 5px;
+  color: gray;
+}
+
+.line {
+  border: solid 0.5px gray;
+  margin: 25px 0 25px 0;
 }
