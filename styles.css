@@ -1,3 +1,14 @@
-div {
-  background-color: blue;
+/* COLORS (light to dark)
+
+#ecfdf5
+#99f6e4
+#34d399
+#059669
+#065f46
+#022c22
+
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
 }
