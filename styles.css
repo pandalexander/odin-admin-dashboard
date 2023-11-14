@@ -1,6 +1,7 @@
 /* COLORS (light to dark)
 
 #ecfdf5
+#d1fae5
 #99f6e4
 #34d399
 #059669
@@ -28,9 +29,10 @@ body {
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  background-color: #059669;
+  background-color: #d1fae5;
   display: grid;
   grid-template-rows: 1fr 2fr;
+  padding: 25px;
 }
 
 .header__top-container {
@@ -43,15 +45,17 @@ body {
 .header__top-container__search-icon {
   height: 35px;
   justify-self: center;
+  fill: white;
 }
 
 .header__top-container__search-bar {
   all: unset;
   height: 30px;
-  background-color: #34d399;
+  background-color: #ecfdf5;
   border-radius: 50px;
   padding: 5px;
   padding-left: 15px;
+  color: #022c22;
 }
 
 .header__top-container__bell-icon {
@@ -67,24 +71,62 @@ body {
 
 .header__top-container__name {
   justify-self: start;
+  color: #022c22;
 }
 
 .header__bottom-container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: end;
+}
+
+.header__bottom-container__profile {
+  height: 75px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.header__bottom-container__welcome-container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.header__bottom-container__welcome-container > p {
+  grid-row: 1 / 2;
+  align-self: center;
+  color: #022c22;
+}
+
+.header__bottom-container__welcome-container > h2 {
+  grid-row: 2 / -1;
+  color: #022c22;
+}
+
+button {
+  all: unset;
+  text-align: center;
+  background-color: #022c22;
+  padding: 15px;
+  border-radius: 35px;
+  margin: 12px;
 }
 
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   background-color: #022c22;
+  padding: 25px;
 }
 
 .main-content {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
   background-color: #065f46;
+  padding: 25px;
 }
 
 div {
