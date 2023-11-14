@@ -9,6 +9,37 @@
 
 */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  border: solid 2px orange;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  background-color: green;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  background-color: blue;
+}
+
+.main-content {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  background-color: yellow;
 }
