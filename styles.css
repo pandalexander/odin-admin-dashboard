@@ -19,6 +19,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -154,6 +164,18 @@ button {
   background-color: #ecfdf5;
   padding: 25px;
   box-shadow: inset 0 7px 9px -7px #022c22;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-content > div {
+  border: solid 2px green;
+}
+
+.main-content__projects-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
 }
 
 div {
